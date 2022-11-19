@@ -15,8 +15,6 @@ class NoteRepository(var dataBase: DbConnection) {
         dataBase.noteDao().insert(notes)
     }
 
-    suspend fun delete(notes: Notes){
-        dataBase.noteDao().delete(notes)
-    }
+
 
 }

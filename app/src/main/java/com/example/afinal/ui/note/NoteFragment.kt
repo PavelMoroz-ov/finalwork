@@ -35,7 +35,7 @@ class NoteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "dbnote").build()
+        val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "dbNote").build()
         val repository = NoteRepository(db)
         val adapter = NoteListAdapter()
 

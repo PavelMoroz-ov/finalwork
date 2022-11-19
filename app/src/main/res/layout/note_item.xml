@@ -25,15 +25,6 @@
                 android:padding="5dp">
 
                 <TextView
-                    android:id="@+id/text1"
-                    android:layout_width="136dp"
-                    android:layout_height="65dp"
-                    android:text="@{notes.name}"
-                    app:layout_constraintBottom_toTopOf="@+id/text2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
                     android:id="@+id/text2"
                     android:layout_width="136dp"
                     android:layout_height="65dp"
@@ -50,6 +41,45 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/text2"
                     app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="136dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="136dp"
+                    android:text="@{notes.name}"
+                    app:layout_constraintBottom_toTopOf="@+id/text2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Цель: "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="41dp"
+                    android:text="Начальная дата:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Конечная дата:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

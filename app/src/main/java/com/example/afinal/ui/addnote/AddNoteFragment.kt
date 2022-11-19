@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.room.Delete
 import androidx.room.Room
 import com.example.afinal.databinding.FragmentAddnoteBinding
 
@@ -43,15 +45,16 @@ class AddNoteFragment : Fragment() {
             var dataEnd = binding.edDataEnd.text.toString()
 
 
-            val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "dbnote").build()
+            val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "dbNote").build()
             val repository = NoteRepository(db)
 
             GlobalScope.launch {
                 repository.insert(Notes(name, data, dataEnd))
             }
 
-
         }
+
+
 
     }
 
