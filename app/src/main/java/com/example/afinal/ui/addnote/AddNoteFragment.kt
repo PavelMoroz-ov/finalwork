@@ -45,7 +45,7 @@ class AddNoteFragment : Fragment() {
             var dataEnd = binding.edDataEnd.text.toString()
 
 
-            val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "dbNote").build()
+            val db = Room.databaseBuilder(requireContext(), DbConnection::class.java, "Новая бронь").build()
             val repository = NoteRepository(db)
 
             GlobalScope.launch {

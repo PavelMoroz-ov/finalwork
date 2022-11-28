@@ -9,7 +9,11 @@
         android:id="@+id/addNote"
         android:name="com.example.afinal.ui.addnote.AddNoteFragment"
         android:label="Add Note"
-        tools:layout="@layout/fragment_addnote" />
+        tools:layout="@layout/fragment_addnote" >
+        <action
+            android:id="@+id/action_addNote_to_note"
+            app:destination="@id/note" />
+    </fragment>
 
     <fragment
         android:id="@+id/note"

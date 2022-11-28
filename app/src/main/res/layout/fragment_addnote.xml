@@ -14,7 +14,7 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Цель"
+        android:hint="Объект"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Дата начала"
+        android:hint="Дата заезда"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/edName"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Добавить заметку"
+        android:text="Добавить бронь"
         app:layout_constraintEnd_toEndOf="@+id/ed_data"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/ed_data"
@@ -52,11 +52,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Дата завершения"
+        android:hint="Дата выезда"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/ed_data"
         app:layout_constraintStart_toStartOf="@+id/ed_data"
         app:layout_constraintTop_toBottomOf="@+id/ed_data" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

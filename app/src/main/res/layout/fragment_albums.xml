@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/album_list_item"
         app:spanCount="3"
-        />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:listitem="@layout/album_list_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
